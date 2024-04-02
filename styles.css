@@ -1,14 +1,40 @@
 /* Give everything the font family of open sans margin padding of zero and box sizing of border box */
-
-/* headings with class of .poppins with poppins san serif*
-
+*{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* headings with class of .poppins with poppins san serif*/
+h1,h2,h3{
+    font-family: sans-serif;
+}
 /* for body use white color, relative position, flex display in
 column direction, content justified to center and 42px gap and padding
 min height of 100vh and overflow of y as scroll */
-
+body{
+    color:white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:42px;
+    padding: 10px 30px;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
 /* style the background img container with fixed position, top & left as 0, width and height
  of 100vw/h, flex display in column and z-index=-2 */
-
+.backgroundImg{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    z-index: -2;
+}
  /* background img width and height 100% and object fit as cover */
 
  /* header center align and 14px gap */
