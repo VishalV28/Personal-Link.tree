@@ -1,41 +1,106 @@
+
 /* Give everything the font family of open sans margin padding of zero and box sizing of border box */
+ 
 *{
     font-family: sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
+    /* border: 1px solid black; */
+} 
 /* headings with class of .poppins with poppins san serif*/
 h1,h2,h3{
     font-family: sans-serif;
 }
+/* div{
+    display: flex;
+    /* height: 100%;
+    width: 100%; 
+} */
 /* for body use white color, relative position, flex display in
 column direction, content justified to center and 42px gap and padding
 min height of 100vh and overflow of y as scroll */
-body{
-    color:white;
+ body{
+     color:white; 
     position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap:42px;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     min-height: 100vh;
     overflow-y: scroll;
-}
+} 
 /* style the background img container with fixed position, top & left as 0, width and height
  of 100vw/h, flex display in column and z-index=-2 */
-.backgroundImg{
+/* .backgroundImg{
     position: fixed;
     top:0;
     left:0;
     width:100vw;
     height:100vh;
-    display:flex;
-    flex-direction: column;
     z-index: -2;
-}
- /* background img width and height 100% and object fit as cover */
+}  
+.backgroundImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
  /* header center align and 14px gap */
+ header{
+    text-align: center;
+    gap: 14px;
+ }
  /* body, header, main .backgroudnimg has flex display in columns */
+
+ body, header, main{
+    display: flex;
+    flex-direction: column;
+ }
+
+ header img{
+    max-width: 140px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding-bottom: 8px;
+ }
+
+ header mark{
+    border-radius: 4px;
+    padding: 2px 4px;
+    background: white;
+    color: #0f172a;
+ }
+
+ header h1{
+    font-size: 2em;
+    font-weight: 400;
+ }
+
+ header p{
+    font-size: 0.9em;
+    font-weight: 700;
+ }
+
+ main{
+    gap: 14px;
+ }
+
+ .link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+
+.link:hover{
+    border-color: skyblue;
+} 
