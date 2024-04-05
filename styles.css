@@ -11,11 +11,11 @@ h1,h2,h3, .poppins{
 }
 
 body{
-    color:white; 
+   color:white; 
    position: relative;
    justify-content: center;
    gap:42px;
-   /* padding: 10px 30px; */
+   padding: 10px 36px;
    min-height: 100vh;
    min-width: 100vw;
    /* overflow-y: scroll; */
@@ -74,7 +74,7 @@ body{
  }
 
  main{
-    gap: 14px;
+    gap: 28px;
  }
 
 .link{
@@ -82,9 +82,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 14px;
+    padding: 18px 18px;
     border: 1px solid #334155;
-    border-radius: 8px;
+    border-radius: 24px;
     width: 420px;
     max-width: 100%;
     margin: 0 auto;
@@ -93,6 +93,7 @@ body{
     overflow: hidden;
     color: white; 
     text-decoration: none;
+    scale: 1.1;
 }
 
 .link:hover{
@@ -108,7 +109,7 @@ body{
 }
 
 .link p{
-    font-size:1em;
+    font-size:1.1em;
 }
 
 .open-sans-Text {
@@ -125,7 +126,7 @@ body{
 
 @media (min-width: 640px) {
     body {
-        gap: 64px;
+        gap: 32px;
         padding: 20px 14px;
     }
 
@@ -135,7 +136,7 @@ body{
     }
 
     header img {
-        max-width: 300px;
+        max-width: 320px;
         padding-bottom: 24px;
     }
 
@@ -151,7 +152,8 @@ body{
 
     .link{
         width: 500px;
-        padding: 10px 16px;
+        max-width: 100%;
+        padding: 18px 24px;
         margin: 0 auto;
     }
 
