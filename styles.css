@@ -18,7 +18,7 @@ body{
    /* padding: 10px 30px; */
    min-height: 100vh;
    min-width: 100vw;
-   overflow-y: scroll;
+   /* overflow-y: scroll; */
    z-index: -2;
 } 
 
@@ -47,11 +47,13 @@ body{
  }
 
  header img{
-    max-width: 140px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 240px;
+    width: 100%; 
+    margin: 0 auto; 
     border-radius: 100%;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    /* scale: ; */
+    /* clip:auto ; */
  }
 
  header mark{
@@ -106,7 +108,7 @@ body{
 }
 
 .link p{
-    font-size:0.9em;
+    font-size:1em;
 }
 
 .open-sans-Text {
@@ -117,10 +119,14 @@ body{
   font-variation-settings: "wdth" 100;
 }
 
+.link i{
+    scale: 1.5;
+}
+
 @media (min-width: 640px) {
     body {
         gap: 64px;
-        padding: 80px 14px;
+        padding: 20px 14px;
     }
 
     header,
@@ -129,22 +135,28 @@ body{
     }
 
     header img {
-        max-width: 200px;
+        max-width: 300px;
         padding-bottom: 24px;
     }
 
     header h1 {
         font-size: 2.5em;
         font-weight: 400;
-    }
+    } 
 
     header p {
         font-size: 1.5em;
         font-weight: 700;
     }
 
+    .link{
+        width: 500px;
+        padding: 10px 16px;
+        margin: 0 auto;
+    }
+
     .link p {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
 }
